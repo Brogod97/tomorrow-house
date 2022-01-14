@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "yarn-sass": "sass",
-    "sass": "sass -wr styles/main.scss ./style.css"
+    "sass": "sass -w styles/main.scss ./style.css"
   },
   "repository": {
     "type": "git",
