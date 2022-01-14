@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "sass": "^1.48.0",
+    "sass-lint": "^1.13.1",
     "script": "^0.1.4"
   }
 }
