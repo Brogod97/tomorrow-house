@@ -43,7 +43,7 @@
     color: $white;
     text-align: center;
     background-color: $red;
-    border-radius: $badge-size / 2;
+    border-radius: calc($badge-size / 2);
   }
 
   @include responsive(md) {
