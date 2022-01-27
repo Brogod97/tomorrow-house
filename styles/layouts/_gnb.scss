@@ -1,10 +1,11 @@
 .gnb {
   position: relative;
+  background-color: $white;
   border-bottom: 1px solid $border;
 
   &-wrapper {
     @include flexbox(between);
-    height: 50px;
+    height: $gnb-height-sm - 1px;
   }
 
   &-right {
@@ -32,11 +33,15 @@
   }
 
   @include responsive(md) {
-    .gnb-left {
+    &-wrapper {
+      height: $gnb-height-md;
+    }
+
+    &-left {
       @include flexbox(start);
     }
 
-    .gnb-right {
+    &-right {
       @include flexbox(end);
 
       .button-group {
@@ -63,10 +68,6 @@
           }
         }
       }
-    }
-
-    .gnb-wrapper {
-      height: 80px;
     }
 
     .logo {
