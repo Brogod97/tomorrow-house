@@ -40,4 +40,25 @@
       margin-left: 4px;
     }
   }
+
+  @include responsive(md) {
+    height: 54px;
+    background-color: $background;
+    border-bottom: 0;
+
+    button {
+      @include text-style(16);
+      height: 54px;
+    }
+
+    .badge {
+      margin-left: 8px;
+    }
+  }
+
+  @include responsive(lg) {
+    &-item button:hover {
+      color: $blue;
+    }
+  }
 }
