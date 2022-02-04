@@ -1,4 +1,15 @@
 .product-review {
+  .review-empty {
+    @include text-style(16, $secondary);
+    padding: 36px 0;
+    font-weight: 400;
+    text-align: center;
+
+    strong {
+      color: $blue;
+    }
+  }
+
   .review-list {
     .review-item {
       border-bottom: 1px solid $border;
@@ -6,6 +17,12 @@
       &:last-child {
         border-bottom: 0;
       }
+    }
+  }
+
+  @include responsive(md) {
+    .review-empty {
+      padding: 16px 0;
     }
   }
 }
