@@ -8,7 +8,7 @@
   table-layout: fixed;
 
   tr {
-    @include text-style(12px, $primary);
+    @include text-style(12, $primary);
     text-align: left;
     vertical-align: top;
     border-bottom: 1px solid $border;
