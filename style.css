@@ -3272,7 +3272,7 @@ i {
   flex-grow: 1;
 }
 
-.order-form-madal {
+.order-form-modal {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -3287,21 +3287,21 @@ i {
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
   overscroll-behavior: contain;
 }
-.order-form-madal.is-open {
+.order-form-modal.is-open {
   display: block;
   animation-duration: 300ms;
   animation-name: modal-fade-in;
 }
-.order-form-madal .order-checkouts {
+.order-form-modal .order-checkouts {
   margin-bottom: 16px;
 }
-.order-form-madal .order-summary {
+.order-form-modal .order-summary {
   margin-bottom: 72px;
 }
-.order-form-madal .order-inputs {
+.order-form-modal .order-inputs {
   margin-bottom: 8px;
 }
-.order-form-madal .button-group {
+.order-form-modal .button-group {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -3310,7 +3310,7 @@ i {
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .order-form-madal {
+  .order-form-modal {
     padding-top: 32px;
   }
 }
