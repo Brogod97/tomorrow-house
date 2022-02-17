@@ -29,15 +29,15 @@ function toggleOrderCtaBookmark() {
     icon.classList.add('ic-bookmark')
     icon.classList.remove('ic-bookmark-filled')
     newCount = newCount - 1
-    countSpan.innerHTML = newCount.toLocaleString()
   } else {
     // NOTE: 비활성화 된 상태이니 => 활성화 (ic-bookmark-filled)
     icon.classList.add('ic-bookmark-filled')
     icon.classList.remove('ic-bookmark')
     newCount = newCount + 1
-    countSpan.innerHTML = newCount.toLocaleString()
   }
 
+  countSpan.innerHTML = newCount.toLocaleString()
+  countSpan.setAttribute('aria-label', `북마크 ${newCount.toLocaleString()}회`)
   this.classList.toggle('is-active')
 }
 
