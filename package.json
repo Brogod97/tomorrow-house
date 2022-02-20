@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "yarn-sass": "sass",
-    "sass": "sass -w styles/main.scss ./style.css"
+    "sass": "sass -w styles/main.scss ./style.css",
+    "sass:build": "sass styles/main.scss ./style.css",
+    "build": "node ./scripts/build.js",
+    "deploy": "npm run sass:build && npm run build && node ./scripts/deploy.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,13 @@
     "node-sass": "^7.0.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.17",
+    "fs-extra": "^10.0.0",
+    "gh-pages": "^3.2.3",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "postcss": "^8.4.6",
     "sass": "^1.48.0",
     "sass-lint": "^1.13.1",
     "script": "^0.1.4"
